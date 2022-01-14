@@ -70,17 +70,11 @@ nav{
 .banner-right{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    background-image: url(./images/Circle\ design.svg);
-    background-repeat: no-repeat;
-    
-    /* background-position-x:0px ; */
-    /* background-size: cover; */
-
-    
+    align-items: center;  
 }
 .banner-right img{
-    position: relative;
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;  
 }
 .primary-button{
     outline: 0;
@@ -92,11 +86,13 @@ nav{
     color:#fff;
     border-radius: 30px;
     position: relative;
-    box-shadow: 20px 0 0 #9b0c5a;
+    box-shadow: 20px 0 0 #dad3d6cb;
     right: 0;
 }
 .primary-button:active{
-    transform: translateX(10);
+    left: 20px;
+  
+    /* box-shadow: 10px 0 0 #c7a0b5; */
 }
 .similar{
     display: grid;
@@ -150,8 +146,8 @@ nav{
 span .yellow{
     color:orange;
 }
-span .partial{
-    color:grey
+span .half{
+    color:orange
 }
 .see-more a{
     text-decoration: none;
@@ -163,12 +159,11 @@ span .partial{
     font-size: 30px;
 }
 /* -----------contact-------- */
-.animation .fas{
-    position: relative;
-    font-size: 50px;
-    margin: 0  auto;
-   
+.contact-photo{
+    width: 100%;
 
+    margin: 0 auto;
+    padding: 30px;
 }
 .contact{
     display: grid;
