@@ -86,9 +86,9 @@ nav{
     color:#fff;
     border-radius: 30px;
     position: relative;
-    /* box-shadow: 20px 0 0 #dad3d6cb;
-    right: 0;
-     */
+    box-shadow: 20px 0 0 #dad3d6cb;
+   
+     
 }
 .primary-button:active{
     left: 20px;
@@ -96,6 +96,23 @@ nav{
   
     /* box-shadow: 10px 0 0 #c7a0b5; */
 }
+@keyframes shifting {
+   from{
+       left:0px;
+   }
+   to{
+       left:40px;
+       color:lightslategray;
+   }
+    
+}
+.fa-arrow-right{
+    animation: shifting 1s ease-in-out 0.5s infinite alternate ;
+    animation-play-state:running;
+    position: relative;
+    
+}
+
 .similar{
     display: grid;
     grid-template-columns: repeat(7,1fr);
@@ -285,7 +302,7 @@ span .half{
         width: 100%;
         flex-direction: column;
         transform: translateY(-350px);
-        transition: 0.9s ease-in-out;
+        transition: 0.9s ease-in;
         
     }
     .extra-cart{
@@ -297,17 +314,10 @@ span .half{
     .inner-card{
         display: none;
     }
-    /* .navigation .fa-shopping-cart{
-        position: absolute;
-        top:0px;
-        right: 0px;
-        margin: 30px;
-        
-
-    } */
-    
+   
     #nav-toggler:checked ~ .navigation{
         transform: translateY(0px);
+       
     }
     nav{
         display: grid;
@@ -317,7 +327,7 @@ span .half{
     }
     
 
-    
+    /* ---------tab-------- */
 }
 @media(max-width:1170px) and (min-width:900px){
     .feature{
