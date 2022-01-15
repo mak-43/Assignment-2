@@ -166,6 +166,7 @@ span .half{
 
     margin: 0 auto;
     padding: 30px;
+
 }
 .contact{
     display: grid;
@@ -218,6 +219,18 @@ span .half{
     border-radius: 5px;
 
 }
+/* nav bar */
+#nav-toggler{
+    display: none;
+
+}
+.nav-toggler-icon{
+    display: none;
+}
+.extra-cart{
+    display: none;
+}
+
 /* -----media-queries--------- */
 
 /* --------Mobile device--------- */
@@ -234,7 +247,10 @@ span .half{
         align-items: center;
         margin:0 auto;
         padding: 10px 0;
-     
+        order:2
+    }
+    .banner-right{
+        order: 1;
     }
     .feature{
         grid-template-columns: 1fr;
@@ -254,6 +270,52 @@ span .half{
       hr{
           width: 100%;
       }  
+      .nav-toggler-icon{
+        display: block;
+        position: absolute;
+        left: 0;
+        margin-left: 30px;
+      
+        
+    }
+    .navigation{
+        position: absolute;
+        top:80px;
+        left:0;
+        width: 100%;
+        flex-direction: column;
+        transform: translateY(-350px);
+        transition: 0.9s ease-in-out;
+        
+    }
+    .extra-cart{
+        position: absolute;
+        display: block;
+        right:0;
+        margin:30px
+    }
+    .inner-card{
+        display: none;
+    }
+    /* .navigation .fa-shopping-cart{
+        position: absolute;
+        top:0px;
+        right: 0px;
+        margin: 30px;
+        
+
+    } */
+    
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0px);
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    
 
     
 }
@@ -266,4 +328,5 @@ span .half{
     .h1{
         font-size: 25px;
     }
+   
 }  
