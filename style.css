@@ -43,7 +43,7 @@ nav{
     color:black
 }
 .navigation a:hover{
-    background-color: rgba(51, 45, 45, 0.1);
+    background-color: #f581bff1;
     border-radius: 10px;
 }
 /* ------banner------ */
