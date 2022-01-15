@@ -79,18 +79,20 @@ nav{
 .primary-button{
     outline: 0;
     border: 0;
-    padding:15px 20px;
+    padding:15px 30px;
     font-size: 18px;
     cursor: pointer;
     background-image: linear-gradient(90deg,#b40c69,#ff008E);
     color:#fff;
     border-radius: 30px;
     position: relative;
-    box-shadow: 20px 0 0 #dad3d6cb;
+    /* box-shadow: 20px 0 0 #dad3d6cb;
     right: 0;
+     */
 }
 .primary-button:active{
     left: 20px;
+    transform:scale(.8) translateX(20px)
   
     /* box-shadow: 10px 0 0 #c7a0b5; */
 }
